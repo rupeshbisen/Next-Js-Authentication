@@ -75,6 +75,7 @@ export default function ForgotPassword() {
             });
             setFormData(initialFormdata)
             setLoader(false);
+            router.push("/login")
         } else {
             toast.error(res.message, {
                 position: toast.POSITION.TOP_RIGHT,
