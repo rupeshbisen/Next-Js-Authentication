@@ -73,11 +73,13 @@ export default function ForgotPassword() {
             toast.success(res.message, {
                 position: toast.POSITION.TOP_RIGHT,
             });
+            setFormData(initialFormdata)
             setLoader(false);
         } else {
             toast.error(res.message, {
                 position: toast.POSITION.TOP_RIGHT,
             });
+            setFormData(initialFormdata)
             setLoader(false);
         }
     }
